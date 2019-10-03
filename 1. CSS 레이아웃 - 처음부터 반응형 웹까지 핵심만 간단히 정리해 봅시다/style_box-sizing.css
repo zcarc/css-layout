@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-size: 2em;
+}
+
+div {
+    display: block;
+    background-color: greenyellow;
+    width: 300px;
+    height: 200px;
+
+    padding: 5px;
+    margin: 15px;
+    border: 5px solid black;
+}
+
+.div1 {
+
+    /* 설정을 하지 않으면 기본 설정 값 */
+    box-sizing: content-box;
+
+
+    /* 
+        이 상태에서 width: 100%; 를 하게 된다면
+        content가 한 화면에 보여줄 수 있는 최대 width로 설정되고
+        그 최대로 늘려진 content에서 추가로 padding,border,margin이 있다면 그 값들도 더해지게 되서
+        가로 스크롤이 생기게 된다. 
+    */
+
+    /*
+        추가적으로 display: block; 속성은 width를 브라우저 최대 크기에 맞춰준다.
+        이 속성에서 margin이 화면 최대 값이 넘긴 값으로 설정되어도 그 값은 설정되지 않고
+        최대 값에서 계속 고정된 상태이다.
+        만약 div 태그가 display: inline-block; 상태라면
+
+    */
+
+}
+
+.div2 {
+
+    /*  
+        이 속성을 사용하면 content에서부터 border까지 포함해서 width가 설정된다. 
+        width: 300px; 이라면 300px에서 padding, margin를 뺀 값이 content의 width가 된다.
+    */
+    box-sizing: border-box;
+
+}
+
+span {
+    display: inline-block;
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 150px;
+}

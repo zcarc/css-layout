@@ -1,0 +1,74 @@
+
+/* 
+    애스터리스크를 요즘 쓰지 않는 이유는 브라우저가 
+    모든 태그를 체크해서 성능에 느려져서 사용하지 않는다.
+
+    * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+ */
+
+ html {
+
+
+     /*      
+        여기서 폰트 사이즈를 수정해주면
+        rem 단위가 변경되는 것을 확인할 수 있다.
+     */
+
+     font-size: 16px;
+ }
+
+
+
+body {
+    margin: 0;
+    font-size: 2em;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    
+    font-size: 0;
+    
+    /* 브라우저 화면에서 최대 넓이 */
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+.item {
+
+    padding: 5%;
+    display: inline-block;
+
+    /* 
+        rem: root em
+        root는 html element(tag)가 default로 가지고 있는 font-size를 쓴다는 의미이다.
+        대부분의 브라우저가 16px로 설정되어 있다. 
+    */
+
+    font-size: 1rem;
+
+
+    /* div 태그들을 위로 수직정렬 한다. */
+    vertical-align: top;
+
+
+}
+
+.item-a {
+    background-color: yellow;
+    width: 30%;
+}
+
+.item-b {
+    background-color: yellowgreen;
+    width: 50%;
+}

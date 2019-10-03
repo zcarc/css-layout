@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style_inline-block.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="item item-a">
+            <h1>Section a</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi culpa modi reprehenderit dolorum quia obcaecati illum odit quibusdam, et possimus officia ipsum eveniet, deleniti aut. Sunt voluptatibus delectus rem tenetur?</p>
+        </section>
+
+        <!-- 
+        이 섹션사이에 공백이 있기 때문에 inline-block으로 설정을 해도 한줄에 두 태그가 배치되지 않는다.
+        해결방법 
+            첫번째는 두 섹션사이에 공백을 없애는 방법이 있다.
+            두번째는 해당태그를 감싸는 최상위 태그의 font-size: 0; 으로 바꾸고
+            다시 자식태그의 font-size를 회복시키는 방법이 있다. ex: font-size: 1rem;  
+            첫번째 방법보다는 두번째 방법을 사용하는 것이 좋다.
+        -->
+
+        <section class="item item-b">
+            <h1>Section b</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit, enim quas deleniti tempora eveniet culpa sunt, at laboriosam amet ipsam cumque provident ullam facilis animi modi nihil veniam nobis?</p>
+        </section>
+    </div>
+
+    
+</body>
+</html>
