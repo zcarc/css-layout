@@ -31,7 +31,8 @@ div {
         추가적으로 display: block; 속성은 width를 브라우저 최대 크기에 맞춰준다.
         이 속성에서 margin이 화면 최대 값이 넘긴 값으로 설정되어도 그 값은 설정되지 않고
         최대 값에서 계속 고정된 상태이다.
-        만약 div 태그가 display: inline-block; 상태라면
+        만약 div 태그가 display: inline-block; 상태라면 margin을 조정할 수 있다.
+		display: block; 상태라면 좌우 간격간 margin 사이즈는 최대 사이즈가 고정된 상태이다.
 
     */
 
@@ -41,7 +42,9 @@ div {
 
     /*  
         이 속성을 사용하면 content에서부터 border까지 포함해서 width가 설정된다. 
-        width: 300px; 이라면 300px에서 padding, margin를 뺀 값이 content의 width가 된다.
+        width: 300px; 이라면 300px에서 padding, border,를 뺀 값이 content의 width가 된다.
+		전체적인 사이즈는 content,padding,border의 width를 포함한 사이즈이다.
+		
     */
     box-sizing: border-box;
 
